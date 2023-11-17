@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackStockMarketMomentum", "TrackStockMarketMomentum\TrackStockMarketMomentum.csproj", "{041CDFAA-9810-479E-9D9D-0F4DA25E2B13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "track-stock-market-momentum", "TrackStockMarketMomentum\track-stock-market-momentum.csproj", "{041CDFAA-9810-479E-9D9D-0F4DA25E2B13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
