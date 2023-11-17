@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'track-stock-market-momentum'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BBF8517E54DC4E9C866A2ED1BBCBB71D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0047BD8BCE8C4B628DA01F28DEB4E986 }}
           package: .
