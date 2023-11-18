@@ -13,11 +13,14 @@ namespace track_stock_market_momentum.Controllers
             _logger = logger;
         }
 
+        [Route("/")]
+        [Route("/Home")]
         public IActionResult Index()
         {
             return View();
         }
 
+        [Route("/Home/Privacy")]
         public IActionResult Privacy()
         {
             return View();
