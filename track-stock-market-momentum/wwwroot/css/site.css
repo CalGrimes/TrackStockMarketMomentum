@@ -1,18 +1,114 @@
+:root {
+    /*variable*/
+    --font-family: 'Poppins'
+}
+
+@font-face {
+    font-family: 'TheFountainOfWishes';
+    src: url('../fonts/TheFountainOfWishesRegular-OVxw4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
 html {
-  font-size: 14px;
+  font-size: 24px;
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
+/* Navbar */
+.navbar-brand {
+    font-family: TheFountainOfWishes;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+/* (.navbar) Box shadow if .white-preview but none if .dark-preview */
+ .navbar {
+    box-shadow: 0px 0px 10px #000;
+}
+
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
   margin-bottom: 60px;
+}
+
+.display-4 {
+    font-weight: 600;
+}
+
+#hero {
+    display: grid;
+    height: 100vh;
+}
+
+.grid-layout {
+    place-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-item.left-column,
+.grid-item.right-column {
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr; /* Switch to a single column layout */
+    }
+
+    .grid-item.left-column,
+    .grid-item.right-column {
+        justify-self: center; /* Center both columns for smaller screens */
+    }
+}
+
+.box {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px #000;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.place-center {
+    place-items: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.box-metadata {
+    font-size: 0.6rem;
+}
+
+.stock-first {
+    min-width: 100px;
+}
+
+.stock-second {
+    text-align: right;
 }
