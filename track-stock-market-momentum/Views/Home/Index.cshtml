@@ -3,7 +3,52 @@
     ViewData["CurrentUrl"] = Url.Action("Index", "Home");
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+
+<section id="hero">
+    <div class="grid-layout">
+        <div class="grid-item left-column">
+            <h1 class="display-4">TMomentum</h1>
+            <p>Track several nasdaq top preforming stocks and view their momentum.</p>
+        
+            <div>
+                <button a class="btn btn-primary" asp-area="" asp-controller="Trade" asp-action="Index">Trade</a></button>
+            </div>
+        </div>
+        <div class="grid-item right-column">
+            <!--foreach placeholder-->
+            <!--Symbol and Price first row, Info and stock-->
+            <div class="grid-layout box">
+                <div class="grid-item stock-first">
+                    <h2>AAPL</h2>
+                    <p class="box-metadata">Rose Quickly</p>
+                </div>
+                <div class="grid-item stock-second">
+                    <p class="mt-1">+1.68%</p>
+                    <p class="box-metadata">365.45</p>
+                </div>
+            </div>
+            <div class="grid-layout box">
+                <div class="grid-item stock-first">
+                    <h2>AAPL</h2>
+                    <p class="box-metadata">Rose Quickly</p>
+                </div>
+                <div class="grid-item stock-second">
+                    <p class="mt-1">+1.68%</p>
+                    <p class="box-metadata">365.45</p>
+                </div>
+            </div>
+            <div class="grid-layout box">
+                <div class="grid-item stock-first">
+                    <h2>AAPL</h2>
+                    <p class="box-metadata">Rose Quickly</p>
+                </div>
+                <div class="grid-item stock-second">
+                    <p class="mt-1">+1.68%</p>
+                    <p class="box-metadata">365.45</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

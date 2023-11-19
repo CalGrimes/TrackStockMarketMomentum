@@ -1,7 +1,14 @@
+using ServiceContracts;
+using Services;
+using track_stock_market_momentum;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.Configure<TradingOptions>(builder.Configuration.GetSection("TradingOptions"));
+builder.Services.AddSingleton<IFinnhubService, FinnhubService>();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
